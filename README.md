@@ -2,6 +2,8 @@
 
 A set of command-line (unix) programs for accessing vehicle GPS tracking data on [Live-Track.NET](https://live-track.net). You'd need an account with Live-Track to use this tool.
 
+![Live-Track CLI Preview](https://user-images.githubusercontent.com/11996508/47757449-b722e780-dca6-11e8-9114-37b4fa2b59df.png)
+
 ## Dependencies
 
 - NodeJS (for parsing JSON)
