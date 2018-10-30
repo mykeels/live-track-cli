@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Using the $PHPSESSID variable exported by the login script, 
+# get the location of all vehicles belonging to the login user account
+
 . ./login.sh
 
 CMD="cmd=load_object_data"
