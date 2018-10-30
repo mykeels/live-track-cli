@@ -19,5 +19,3 @@ CMD="cmd=login&username=$LIVETRACK_USERNAME&password=$LIVETRACK_PASSWORD&remembe
 export PHPSESSID=$(curl -s -d "$CMD" -X POST -c - https://live-track.net/func/fn_connect.php | 
     grep -e "PHPSESSID" | 
     sed -n -e 's/^.*PHPSESSID[[:space:]]*//p')
-
-echo $PHPSESSID
