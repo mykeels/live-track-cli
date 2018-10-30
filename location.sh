@@ -32,11 +32,11 @@ NODE_SCRIPT="
 
 "
 
-if [ -z $OUTPUT ]
+if [ -z "$OUTPUT" ]
 then
-    echo "--------------------------"
-    node -e "$NODE_SCRIPT" "$OUTPUT"
-else
     echo "no output"
     exit 1
+else
+    echo "--------------------------"
+    node -e "$NODE_SCRIPT" "$OUTPUT"
 fi
