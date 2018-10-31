@@ -3,7 +3,10 @@
 # Using the $PHPSESSID variable exported by the login script, 
 # get the location of all vehicles belonging to the login user account
 
-. ./login.sh
+# store current script directory in DIR
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+. $DIR/login.sh
 
 CMD="cmd=load_object_data"
 HEADERS="cookie: PHPSESSID=$PHPSESSID;"
